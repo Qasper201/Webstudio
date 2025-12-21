@@ -20,6 +20,16 @@ body {
   line-height: 1.5;
 }
 
+.container{
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 15px 15px;
+  outline: auto;
+}
+
+
+
+
 header {
   background-color: var(--white);
   color: var(--text-main);
