@@ -27,9 +27,6 @@ body {
   
 }
 
-
-
-
 header {
   background-color: var(--white);
   color: var(--text-main);
@@ -159,7 +156,7 @@ h3 {
   gap: 10px;
   padding: 0;
   list-style: none;
-  line-height: 1;
+  
 }
 
 .filters a {
@@ -198,7 +195,14 @@ footer .container {
 }
 
 .hero h2{
+  display: block;
+  width: 696px;
+  height: 120px;
   font-size:44px;
+  line-height: 60px;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+  
 }
 
 .hero .container {
@@ -215,5 +219,4 @@ footer .container {
   height: 50px;
   background-color: var(--accent);
   color: var(--white);
-  line-height: 1;
 }
