@@ -24,7 +24,12 @@
             </li>
             <li class="navigation-ul-item"><a href="#">Контакти</a></li>
           </ul>
-          <a href="#">info@devstudio.com</a>
+          <div class="email">
+            <svg class="icon-email">
+              <use href="./static/img/symbol-defs.svg#icon-post"></use>
+            </svg>
+            <a href="#">info@devstudio.com</a>
+        </div> 
         </nav>
         <p class="header-tel">+38 096 111 11 11</p>
       </div>
@@ -93,13 +98,55 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container">
-      <h2 class="footer-title">WebStudio</h2>
-      <address class="footer-adress">м. Київ, пр-т Лесі Українки, 26</address>
-      <p class="footer-email">info@devstudio.com</p>
-      <p class="footer-tel">+38 096 111 11 11</p>
-      </div>
-    </footer>
+    <footer class="footer">
+  <div class="container">
+
+    <!-- Ліва частина -->
+    <div class="footer-left">
+      <a href="#" class="logo">Web<span>Studio</span></a>
+      <p>м. Київ, пр-т Лесі Українки, 26</p>
+      <p>info@devstudio.com</p>
+      <p>+38 096 111 11 11</p>
+    </div>
+
+    <!-- Права частина -->
+    <div class="footer-right">
+      <p class="footer-title">ПРИЄДНУЙТЕСЬ</p>
+
+      <ul class="social-list-footer">
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="./static/img/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="./static/img/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="./static/img/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="./static/img/symbol-defs.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</footer>
   </body>
 </html>
