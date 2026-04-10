@@ -338,11 +338,11 @@ footer .container {
 }
 
 .adress {
-  margin-bottom: 5px; /* менша відстань */
+  margin-bottom: 5px;
 }
 
 .text-secondary p {
-  margin: 2px 0; /* дуже маленький відступ між email і телефоном */
+  margin: 2px 0;
 }
 
 .footer-right {
@@ -396,14 +396,21 @@ footer .container {
   
 }
 
-.icon-email {
-  width: 16px;
+.icon-email, .icon-tel{
+  width:16px;
   height: 12px;
 }
 
-.email{
-  gap:10px
+.email, .tel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.icon-email, .icon-tel {
+  display: block;
+}
+
 
 .client {
   padding-top: 94px;
