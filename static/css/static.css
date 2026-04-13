@@ -89,6 +89,17 @@ header p {
   color: var(--accent);
 }
 
+
+.email a:hover,
+.tel a:hover {
+  color: var(--accent);
+}
+
+.email:hover .icon-email,
+.tel:hover .icon-tel {
+  fill: var(--accent);
+}
+
 h3 {
   color: var(--text-main);
   line-height: 1.2;
