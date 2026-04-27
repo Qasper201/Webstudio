@@ -15,13 +15,70 @@
   <title>WebStudio</title>
 </head>
 
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close" data-modal-close>
+      ✕
+    </button>
+
+    <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+
+    <form class="modal-form">
+      <label class="form-label">
+        Ім'я
+        <div class="input-wrapper">
+            <input type="text" class="form-input" />
+            <svg class="input-icon">
+              <use href="./static/img/symbol-defs.svg#icon-person"></use>
+            </svg>
+        </div>
+      </label>
+
+      <label class="form-label">
+        Телефон
+        <div class="input-wrapper">
+          <input type="tel" class="form-input" />
+          <svg class="input-icon">
+            <use href="./static/img/symbol-defs.svg#icon-phone"></use>
+          </svg>
+        </div>
+      </label>
+
+      <label class="form-label">
+        Пошта
+        <div class="input-wrapper">
+          <input type="email" class="form-input" />
+          <svg class="input-icon">
+            <use href="./static/img/symbol-defs.svg#icon-email-form"></use>
+          </svg>
+        </div>
+      </label>
+
+      <label class="form-label">
+        Коментар
+        <textarea class="form-textarea"></textarea>
+      </label>
+
+      <label class="checkbox-label">
+        <input type="checkbox" />
+        Погоджуюся з розсилкою <a>Умови договору</a>
+      </label>
+
+      <button type="submit" class="modal-submit">
+        Відправити
+      </button>
+    </form>
+  </div>
+</div>
+
 <body>
   <header>
     <div class="container">
       <a href="index.html" class="logo"><span>Web</span>Studio</a>
       <nav class="navigation">
         <ul class="navigation-ul">
-          <li class="navigation-ul-item"><a href="#">Студія</a></li>
+          <li class="navigation-ul-item"><a href="index.html" class="active">Студія</a></li>
           <li class="navigation-ul-item">
             <a href="portfolio.html">Портфоліо</a>
           </li>
@@ -48,7 +105,9 @@
     <section class="hero">
       <div class="container">
         <h2 class="hero-title">Ефективні рішення для вашого бізнесу</h2>
-        <button class="hero-button" name="button">Замовити послугу</button>
+        <button class="hero-button" data-modal-open>
+            Замовити послугу
+        </button>
       </div>
     </section>
     <section class="text">
@@ -282,7 +341,7 @@
   </div>
 </section>
   </main>
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
 
     
@@ -331,9 +390,18 @@
       </ul>
 
     </div>
+    <div class="footer-subscribe">
+      <p class="footer-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
 
+      <form class="subscribe-form">
+        <input type="email" placeholder="E-mail" />
+        <button type="submit">
+          Підписатися ✈
+        </button>
+      </form>
+    </div>
   </div>
 </footer>
 </body>
-
+    <script src="/static/js/modal.js"></script>
 </html>
